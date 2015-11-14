@@ -1,27 +1,26 @@
 void function() {
 
-	var N = 2e5, M = 2e2, L = 6;
+	var N = 4e5, M = 2e2, L = 6;
 
 	var cases = [
-		['enq0', require('./enq0'), makeCase(require('./enq0'))],
-		['enq1', require('./enq1'), makeCase(require('./enq1'))],
-		['enq2', require('./enq2'), makeCase(require('./enq2'))],
-		['enq3', require('./enq3'), makeCase(require('./enq3'))],
-		['enq4', require('./enq4'), makeCase(require('./enq4'))],
-		['enq5', require('./enq5'), makeCase(require('./enq5'))],
+		['enq0', require('./enq0arr0'), makeCase(require('./enq0arr0'))],
+		['enq1', require('./enq1arr1'), makeCase(require('./enq1arr1'))],
+		['enq2', require('./enq2obj1'), makeCase(require('./enq2obj1'))],
+		['enq3', require('./enq3obj2'), makeCase(require('./enq3obj2'))],
+		['enq4', require('./enq4cell'), makeCase(require('./enq4cell'))],
+		['enq5', require('./enq5args'), makeCase(require('./enq5args'))],
 	];
 
 	cases.forEach(x => {
-		console.log(x[0], x[1].name);
-		var Q = x[1];
-		var q = new Q();
+		var Queue = x[1];
+		var q = new Queue();
 		q.push('elem1');
 		q.push('elem2');
 		q.push('elem3');
-		if (q.shift() !== 'elem1') console.log('err1');
-		if (q.shift() !== 'elem2') console.log('err2');
-		if (q.shift() !== 'elem3') console.log('err3');
-		if (q.shift() !== undefined) console.log('err4:' + q.shift());
+		if (q.shift() !== 'elem1') console.log(x[0] + ' ' + x[1].name + 'err1');
+		if (q.shift() !== 'elem2') console.log(x[0] + ' ' + x[1].name + 'err2');
+		if (q.shift() !== 'elem3') console.log(x[0] + ' ' + x[1].name + 'err3');
+		if (q.shift() !== undefined) console.log(x[0] + ' ' + x[1].name + 'err4:' + q.shift());
 
 		//q.push([1, 2]);
 		//console.log(q.shift());
