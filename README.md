@@ -13,5 +13,5 @@ q.push('elem3');
 console.log(q.shift()); // -> 'elem1'
 console.log(q.shift()); // -> 'elem2'
 console.log(q.shift()); // -> 'elem3'
-console.log(q.shift()); // -> null
+console.log(q.shift()); // -> undefined
 ```
