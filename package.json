@@ -3,9 +3,6 @@
   "version": "0.0.0",
   "description": "enqueue",
   "main": "enq.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "LightSpeedWorks/enq"
@@ -15,5 +12,8 @@
     "queue"
   ],
   "author": "LightSpeedC",
-  "license": "MIT"
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
 }
