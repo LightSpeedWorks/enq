@@ -2,7 +2,7 @@ enq
 ====
 
 ```
-var Queue = require('./enq');
+var Queue = require('enq');
 
 var q = new Queue();
 
