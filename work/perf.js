@@ -3,12 +3,13 @@ void function() {
 	var N = 4e5, M = 2e2, L = 6;
 
 	var cases = [
-		['enq0', require('./enq0arr0'), makeCase(require('./enq0arr0'))],
+		//['enq0', require('./enq0arr0'), makeCase(require('./enq0arr0'))],
 		['enq1', require('./enq1arr1'), makeCase(require('./enq1arr1'))],
 		['enq2', require('./enq2obj1'), makeCase(require('./enq2obj1'))],
-		['enq3', require('./enq3obj2'), makeCase(require('./enq3obj2'))],
+		//['enq3', require('./enq3obj2'), makeCase(require('./enq3obj2'))],
 		['enq4', require('./enq4cell'), makeCase(require('./enq4cell'))],
-		['enq5', require('./enq5args'), makeCase(require('./enq5args'))],
+		//['enq5', require('./enq5args'), makeCase(require('./enq5args'))],
+		//['enq6', require('./enq6arr2'), makeCase(require('./enq6arr2'))],
 	];
 
 	cases.forEach(x => {
