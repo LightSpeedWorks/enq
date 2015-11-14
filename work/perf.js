@@ -1,8 +1,9 @@
 void function() {
 
-	var N = 1e4, M = 1e4, L = 6;
+	var N = 1e5, M = 1e2, L = 6;
 
 	var cases = [
+		['enq0', makeCase(require('./enq0'))],
 		['enq1', makeCase(require('./enq1'))],
 		['enq2', makeCase(require('./enq2'))],
 		['enq3', makeCase(require('./enq3'))],
